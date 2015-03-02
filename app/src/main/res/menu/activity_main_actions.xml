@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Refresh -->
+    <item android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="@string/refresh_icon_title"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_sortSize"
+        android:icon="@drawable/ic_action_sort"
+        android:title="Sort"
+        android:showAsAction="ifRoom" >
+
+    <menu>
+        <item
+            android:id="@+id/menuSortHot"
+            android:title="What's Hot" />
+        <item
+            android:id="@+id/menuSortDate"
+            android:title="Ending Soonest" />
+    </menu>
+    </item>
+
+    <item android:id="@+id/action_sort"
+        android:icon="@drawable/ic_action_labels"
+        android:title="@string/sort_size"
+        android:showAsAction="ifRoom" >
+
+        <menu>
+            <item
+                android:id="@+id/menuSortMens"
+                android:icon="@drawable/user91"
+                android:title="Men's" />
+
+            <item
+                android:id="@+id/menuSortWomens"
+                android:icon="@drawable/woman139"
+                android:title="Women's" />
+
+            <item
+                android:id="@+id/menuSortChild"
+                android:icon="@drawable/boy21"
+                android:title="Children's" />
+
+            <item
+                android:id="@+id/menuSortFoot"
+                android:icon="@drawable/trail"
+                android:title="Footwear" />
+            <item
+                android:id="@+id/menuSortHealth"
+                android:icon="@drawable/pharmacy11"
+                android:title="Health &amp; Beauty" />
+            <item
+                android:id="@+id/menuSortJewel"
+                android:icon="@drawable/rings4"
+                android:title="Jewellery &amp; Accessories" />
+            <item
+                android:id="@+id/menuSortElec"
+                android:icon="@drawable/mobile26"
+                android:title="Electronics &amp; Computers" />
+            <item
+                android:id="@+id/menuSortFood"
+                android:icon="@drawable/fastfood"
+                android:title="Food &amp; Drink" />
+            <item
+                android:id="@+id/menuSortServices"
+                android:icon="@drawable/covered16"
+                android:title="Services" />
+            <item
+                android:id="@+id/menuSortSport"
+                android:icon="@drawable/running31"
+                android:title="Sporting Goods &amp; Athletic Wear" />
+            <item
+                android:id="@+id/menuSortBooks"
+                android:icon="@drawable/text87"
+                android:title="Books &amp; News" />
+            <item
+                android:id="@+id/menuSortToys"
+                android:icon="@drawable/puzzle38"
+                android:title="Toy's &amp; Hobbies" />
+            <item
+                android:id="@+id/menuSortMarket"
+                android:icon="@drawable/shoppingcart7"
+                android:title="Supermarket" />
+        </menu>
+        </item>
+
+
+</menu>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prefTagString"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:id="@+id/prefTagline"/>
+
+
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Men's Apparel"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/user91"
+        android:drawablePadding="10dp"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:layout_margin="15dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/chkMens"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Women's Apparel"
+                android:drawableStart="@drawable/woman139"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkWomens"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Children's Apparel"
+                android:drawableStart="@drawable/boy21"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkChildrens"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Footwear"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/trail"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkFootwear"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health &amp; Beauty"
+                android:drawableStart="@drawable/pharmacy11"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkHealth"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jewellery &amp; Accessories"
+                android:drawableStart="@drawable/rings4"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkJewellery"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electronics &amp; Computers"
+                android:drawableStart="@drawable/mobile26"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkElec"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food &amp; Drink"
+                android:drawableStart="@drawable/fastfood"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkFood"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:drawableStart="@drawable/covered16"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkServices"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sporting Goods &amp; Athletic Wear"
+                android:drawableStart="@drawable/running31"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkSport"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Books &amp; News"
+                android:drawableStart="@drawable/text87"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkBooks"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toys &amp; Hobbies"
+                android:drawableStart="@drawable/puzzle38"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkToys"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supermarket"
+                android:drawableStart="@drawable/shoppingcart7"
+                android:drawablePadding="10dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:layout_margin="15dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/chkSuper"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/Divider"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSavePrefString"
+        android:id="@+id/btnSavePref"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:width="150dp"
+        android:nestedScrollingEnabled="false"
+        android:onClick="savePrefs" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
