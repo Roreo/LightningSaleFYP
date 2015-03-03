@@ -49,7 +49,7 @@ import java.util.Map;
  * Created by Rory on 02/12/2014.
  */
 
-//The third commit
+//The clairey commit
 public class MainActivity extends Activity {
 
 
