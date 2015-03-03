@@ -25,6 +25,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -57,9 +58,11 @@ public class MainActivity extends Activity {
     public static final String TAG = "NfcDemo";
 
     private TextView mTextView;
+    private TextView textNFC;
     private NfcAdapter mNfcAdapter;
 
 
+    ImageView tapIcon;
     ProgressDialog pDialog;
     ListView list;
     ArrayList<HashMap<String, String>> oslist = new ArrayList<HashMap<String, String>>();
@@ -73,6 +76,8 @@ public class MainActivity extends Activity {
     private static final String TAG_TAGS = "tags";
     private static final String TAG_LIKES = "likes";
     private int sortMeasure = 0;
+
+    public String dialogMessage = "";
 
     public static String testNFC = "bolt/";
 
@@ -314,7 +319,7 @@ public class MainActivity extends Activity {
             // TODO Auto-generated method stub
             myBinder = (BackGroundBoundService.BackGroundBinder) service;
             isBound = true;
-            update();
+
         }
 
         @Override
@@ -385,6 +390,9 @@ public class MainActivity extends Activity {
         }
 
         handleIntent(getIntent());
+
+        tapIcon = (ImageView)findViewById(R.id.imgTap);
+        textNFC = (TextView)findViewById(R.id.tvNFC);
     }
 
     @Override
@@ -459,6 +467,7 @@ public class MainActivity extends Activity {
      * @param activity The corresponding {@link BaseActivity} requesting to stop the foreground dispatch.
      * @param adapter The {@link NfcAdapter} used for the foreground dispatch.
      */
+    @SuppressWarnings("JavadocReference")
     public static void stopForegroundDispatch(final Activity activity, NfcAdapter adapter) {
         adapter.disableForegroundDispatch(activity);
     }
@@ -522,7 +531,20 @@ public class MainActivity extends Activity {
         protected void onPostExecute(String result) {
             if (result != null) {
                 testNFC = result;
-                System.out.println(testNFC);
+
+                if(result.equals("boltMahon/")){
+                    dialogMessage = "Mahon Point";
+                }
+                else if(result.equals("boltOpera/")){
+                    dialogMessage = "Opera Lane";
+                }
+                else if(result.equals("boltWilton/")){
+                    dialogMessage = "Wilton Shopping Centre";
+                }
+                tapIcon.setVisibility(View.GONE);
+                textNFC.setVisibility(View.GONE);
+                update();
+
             }
         }
     }
@@ -723,7 +745,7 @@ public class MainActivity extends Activity {
     public void update(){
         SharedPreferences settings = getSharedPreferences("Test", Context.MODE_PRIVATE);
         pDialog = new ProgressDialog(MainActivity.this);
-        pDialog.setMessage("Getting Data ...");
+        pDialog.setMessage("Getting Data for " + dialogMessage);
         pDialog.setIndeterminate(false);
         pDialog.setCancelable(true);
         pDialog.show();
